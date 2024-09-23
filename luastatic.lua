@@ -1,4 +1,4 @@
-#!/usr/bin/env lua
+-- #!/usr/bin/env lua
 
 -- The author disclaims copyright to this source code.
 
@@ -433,7 +433,8 @@ if os.getenv("CC") == "" then
 	os.exit(0)
 end
 
-if not execute(CC .. " --version 1>/dev/null 2>/dev/null") then
+-- if not execute(CC .. " --version 1>/dev/null 2>/dev/null") then
+if not execute(CC .. " --version") then
 	io.stderr:write("C compiler not found.\n")
 	os.exit(1)
 end
